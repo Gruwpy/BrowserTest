@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Cool Webpage</title>
+	<title>My Cool Website</title>
 	<style>
 		body {
 			background-color: black;
 			color: white;
-			font-family: Arial, sans-serif;
 			margin: 0;
 			padding: 0;
+			font-family: Arial, sans-serif;
 		}
-		.chat-window {
-			position: absolute;
-			border: none;
+
+		h1 {
+			text-align: center;
+			padding-top: 20px;
 		}
-		#chatango {
-			bottom: 0;
-			right: 0;
-			width: 300px;
-			height: 400px;
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			box-sizing: border-box;
 		}
-		#xat {
-			bottom: 0;
-			left: 0;
+
+		.chatango {
 			width: 40%;
-			height: 400px;
+			height: 350px;
+			margin-bottom: 20px;
 		}
-		#discord {
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 500px;
+
+		.xat {
+			width: 40%;
+			height: 350px;
+			margin-bottom: 20px;
+		}
+
+		.discord {
+			width: 40%;
+			height: 200px;
+			margin-bottom: 20px;
 		}
 	</style>
 </head>
 <body>
-	<iframe id="xat" class="chat-window" src="https://xat.com/embed/chat.php#id=77863202&gn=AnimeandVamps" frameborder="0" scrolling="no"></iframe>
-	<iframe id="discord" class="chat-window" src="https://discord.com/widget?id=898402230363885599&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-	<iframe id="chatango" class="chat-window" src="https://st.chatango.com/flash/group_embed_old.swf?gn=animeandvamps&lnkColor=cc0000&srv=27.chatango.com&tl=1621408616" frameborder="0" scrolling="no"></iframe>
+	<h1>Welcome to My Cool Website</h1>
+	<div class="container">
+		<div class="discord">
+			<iframe src="https://discord.com/widget?id=898402230363885599&theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+		</div>
+		<div class="xat">
+			<iframe src="https://xat.com/embed/chat.php#id=77863202&gn=AnimeandVamps" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+			<br>
+			<small><a target="_BLANK" href="https://xat.com/web_gear/chat/embed.php?id=77863202&GroupName=AnimeandVamps">Get AnimeandVamps chat group</a> | <a target="_BLANK" href="https://xat.com/AnimeandVamps"> Go to AnimeandVamps website</a></small>
+			<br>
+		</div>
+		<div class="chatango">
+			<script id="cid0020000343827445501" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%;height: 100%;">{"handle":"animeandvamps","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"fwtickm":1}}</script> 
+		</div>
+	</div>
 </body>
 </html>
-
