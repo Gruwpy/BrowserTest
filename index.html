@@ -1,51 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Anime and Vampires Chat</title>
+    <meta charset="UTF-8">
+    <title>My Cool Page</title>
     <style>
       body {
-        background-color: #000000;
-        font-family: Arial, sans-serif;
-        color: #ffffff;
+        background-color: black;
       }
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        text-align: center;
+      #chats {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        height: 100vh;
+        width: 100%;
       }
-      .chat-container {
-        margin: 1em;
+      #xat-chat {
+        height: 90%;
+        width: 60%;
       }
-      .chat-container.chatango {
-        width: 45%;
-      }
-      .chat-container.xat {
-        width: 50%;
-      }
-      h1 {
-        color: #cc0000;
-      }
-      p {
-        font-size: 1.2em;
-        margin-bottom: 2em;
+      #chatandgo-chat {
+        height: 90%;
+        width: 40%;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="chat-container chatango">
-        <h2>Chatango Chat</h2>
-        <script id="cid0020000343827445501" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%;height: 350px;">{"handle":"animeandvamps","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"fwtickm":1}}</script>
-      </div>
-      <div class="chat-container xat">
-        <h2>Xat Chat</h2>
-        <iframe src="https://xat.com/embed/chat.php#id=77863202&gn=AnimeandVamps" width="100%" height="486" frameborder="0" scrolling="no"></iframe>
-      </div>
+    <div id="chats">
+      <iframe id="xat-chat" src="https://xat.com/embed/chat.php#id=77863202&gn=AnimeandVamps" frameborder="0" scrolling="no"></iframe>
+      <script id="cid0020000343827445501" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 250px;height: 350px;">{"handle":"animeandvamps","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"fwtickm":1}}</script>
     </div>
   </body>
 </html>
