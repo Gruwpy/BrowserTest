@@ -1,40 +1,20 @@
-<style>
-.chat-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  height: 90vh;
-  width: 100%;
-  background-color: black;
-}
-
-.chat-window {
-  height: 40%;
-  width: 45%;
-  border: 4px solid yellow;
-}
-
-.chatandgo {
-  height: 35%;
-  width: 45%;
-  border: 4px solid yellow;
-}
-
-iframe {
-  border: none;
-}
-</style>
-
-<div class="chat-container">
-  <div class="chat-window">
-    <iframe src="https://xat.com/embed/chat.php#id=77863202&gn=AnimeandVamps" width="100%" height="100%"></iframe>
-  </div>
-  <div class="chat-window">
-    <iframe src="https://discord.com/widget?id=898402230363885599&theme=dark" width="100%" height="100%"></iframe>
-  </div>
-  <div class="chatandgo">
-    <iframe src="https://chatango.com/iframe?id=231726460&bg=1&lc=FFFFFF&bc=000000&l=0" width="100%" height="100%"></iframe>
-  </div>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Chat Page</title>
+  </head>
+  <body style="background-color: #000;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; height: 100vh; padding: 10px;">
+      <div style="flex-basis: 45%; height: 80%; border: 4px solid #ff0;">
+        <iframe src="https://xat.com/embed/chat.php#id=77863202&gn=AnimeandVamps" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div style="flex-basis: 45%; height: 80%; border: 4px solid #ff0;">
+        <iframe src="https://discord.com/widget?id=898402230363885599&theme=dark" width="100%" height="100%" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      </div>
+      <div style="flex-basis: 90%; height: 80%; margin-top: 10px; border: 4px solid #ff0;">
+        <script id="cid0020000343827445501" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 100%; height: 100%;">{"handle":"animeandvamps","arch":"js","styles":{"a":"CC0000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"CC0000","l":"CC0000","m":"CC0000","n":"FFFFFF","p":"10","q":"CC0000","r":100,"fwtickm":1}}</script>
+      </div>
+    </div>
+  </body>
+</html>
 
